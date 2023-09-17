@@ -5,18 +5,31 @@
 body {
     background-color: rgb(29, 26, 26);
 }
+header {
+    height: max-content;
+    
+}
+.title {
+    color: rgb(214, 81, 48);
+    margin: 30px auto;
+    font-size: 38px;
+    letter-spacing: 2px;
+    width: max-content;
+}
 .container {
     position: absolute;
-    top: 52%;
+    top: 50%;
     left: 50%;
+    padding: 20px;
+    border: 5px solid rgb(214, 81, 48);
+    border-radius: 10px;
     transform: translate(-50%, -50%);
 }
 .slider {
-    max-width: 700px;
-    height: 420px;
+    max-width: 800px;
+    height: 560px;
     overflow: hidden;
-    border: 5px solid rgb(214, 81, 48);
-    border-radius: 10px;
+
 }
 .slider__line {
     display: flex;
@@ -25,31 +38,50 @@ body {
 }
 .slide__box {
     width: 20%;
+    border-radius: 20px;
     transition: all 2s ease;
 }
 .slider__img {
     width: 100%;
-    height: 100%;
+    height: auto;
+ 
 }
-.pagination {
+.slide__text {
+    width: 100%;
+    margin: 30px 0 0;
+    padding: 0;
+    font-size: 26px;
+    color: rgb(214, 81, 48);
+}
+.controls {
+    position: absolute;
+    top: 500px;
+    right: 20px;
     display: flex;
     gap: 10px;
-    width: max-content;
-    margin: 20px auto;
+    width: 50%;
+    height: 50px;
+    justify-content: flex-end;
+    background-color: rgb(29, 26, 26);
+    z-index: 5;
 }
-.dot {
+.controls__item {
     width: 20px;
     height: 20px;
-    background-color: rgb(66, 59, 57);
+    background-color: inherit;
     border-radius: 50%;
     border: 4px solid rgb(214, 81, 48);
     cursor: pointer;
     transition: all 0.5s ease;
 }
-.dot:hover {
-    background-color: rgb(23, 20, 20);
+.controls__item:hover {
+    background-color: rgb(66, 59, 57);
     transform: scale(1.1);
 }
+.controls__item:checked {
+    background-color: inherit;
+}
+
 input[name="radio"] {
     position: absolute;
     visibility: hidden;

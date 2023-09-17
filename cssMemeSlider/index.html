@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="container">
+    <header class="header">
+        <h1 class="title">cssMemeSlider</h1>
+    </header>
+    <main class="container">
         <div class="slider">
             <div class="slider__line">
                 <input type="radio" name="radio" id="dot-1" checked>
@@ -19,28 +22,33 @@
             
                 <div class="slide__box slide-1">
                     <img class="slide__img" src="./assets/img/slide-1.jpg" alt="slide">
+                    <p class="slide__text">Hello World!</p>
                 </div>
                 <div class="slide__box">
                     <img class="slide__img" src="./assets/img/slide-2.jpg" alt="slide">
+                    <p class="slide__text">Hello World!</p>
                 </div>
                 <div class="slide__box">
                     <img class="slide__img" src="./assets/img/slide-3.jpg" alt="slide">
+                    <p class="slide__text">Hello World!</p>
                 </div>
                 <div class="slide__box">
                     <img class="slide__img" src="./assets/img/slide-4.jpg" alt="slide">
+                    <p class="slide__text">Hello World!</p>
                 </div>
                 <div class="slide__box">
                     <img class="slide__img" src="./assets/img/slide-5.jpg" alt="slide">
+                    <p class="slide__text">Hello World!</p>
                 </div>
             </div>
+            <div class="controls">
+                <label class="controls__item" for="dot-1"></label>
+                <label class="controls__item" for="dot-2"></label>
+                <label class="controls__item" for="dot-3"></label>
+                <label class="controls__item" for="dot-4"></label>
+                <label class="controls__item" for="dot-5"></label>
+            </div>
         </div>
-        <div class="pagination">
-            <label class="dot" for="dot-1"></label>
-            <label class="dot" for="dot-2"></label>
-            <label class="dot" for="dot-3"></label>
-            <label class="dot" for="dot-4"></label>
-            <label class="dot" for="dot-5"></label>
-        </div>
-    </div>
+    </main>
 </body>
 </html>
